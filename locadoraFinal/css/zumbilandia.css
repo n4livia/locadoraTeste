@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #FFC0CB, #4CAF50);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.topo {
+    background: linear-gradient(to right, #4CAF50, #FFC0CB);
+    color: #fff;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.topo h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.menu-lateral {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #222;
+    padding-top: 100px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul li {
+    padding: 12px 24px;
+}
+
+.menu-lateral ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.principal {
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: 240px;
+}
+
+.categorias {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #292929;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.categorias a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 10px;
+    transition: color 0.2s ease;
+}
+
+.categorias a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.detalhes-filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffffdd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.detalhes-filme img {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.detalhes-filme p {
+    font-size: 16px;
+    color: #333;
+    max-width: 90%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #4CAF50, #FFC0CB);
+    color: #fff;
+    border-top: 5px solid #ffffff;
+    font-size: 0.9em;
+}

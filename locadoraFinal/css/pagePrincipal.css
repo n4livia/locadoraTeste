@@ -1,0 +1,135 @@
+* {
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4CAF50, #FFC0CB);
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+.topo {
+    background-color: linear-gradient(90deg, #4CAF50, #FFC0CB);
+    color: #fafafa;
+    padding: 25px 25px 25px 260px; 
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 0 5px 10px black;
+}
+.topo a{
+      color: #fafafa;
+    text-decoration: none;
+    background-color: #386964; 
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.topo a:hover{
+    background-color: #75c7bf;
+    transition: 0.3s;
+}
+.topo h1 {
+    font-size: 35px;
+}
+
+
+.menu-lateral {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #1f1f1f;
+    padding-top: 100px;
+    box-shadow: 5px 0 10px black;
+    z-index: 10;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul li {
+    padding: 12px 24px;
+}
+
+.menu-lateral ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.principal {
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: 260px;
+}
+
+.principal h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 24px;
+    border-bottom: 1px solid #817f7f;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.principal img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+  background: linear-gradient(135deg, #4CAF50, #FFC0CB);
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 14px;
+    border-top: 1px solid #2c2c2c;
+}
+
+button, .botao-fake, .menu-lateral ul li a, .links a {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover, .botao-fake:hover, .menu-lateral ul li a:hover, .links a:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+.card-filme:hover, .card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.4), 0 6px 6px rgba(255, 192, 203, 0.3);
+}
