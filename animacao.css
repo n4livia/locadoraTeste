@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #2c003e, #000000);
+    color: #f5f5f5;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.topo {
+    background: linear-gradient(to right, #4CAF50, #FFC0CB);
+    color: #fff;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.topo h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    background-color: #1c1c1c;
+    padding-top: 120px;
+    box-shadow: 5px 0 10px rgba(0,0,0,0.5);
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    padding: 15px 30px;
+}
+
+.menu-lateral ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.principal {
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: 240px;
+}
+
+.principal h2, .principal h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFC0CB;
+}
+
+.categorias {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #292929;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.categorias a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 10px;
+    transition: color 0.2s ease;
+}
+
+.categorias a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.galeria-filmes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+
+.card-filme {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    width: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.card-filme:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.4), 0 6px 6px rgba(255, 192, 203, 0.3);
+}
+
+.card-filme img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #4CAF50, #FFC0CB);
+    color: #fff;
+    border-top: 5px solid #ffffff;
+    font-size: 0.9em;
+}
